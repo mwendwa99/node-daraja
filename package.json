@@ -1,0 +1,26 @@
+{
+  "name": "daraja-node",
+  "version": "1.0.0",
+  "description": "daraja api endpoint",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "m-pesa",
+    "safaricom",
+    "daraja",
+    "api",
+    "m-pesa",
+    "api"
+  ],
+  "author": "Brian Mwendwa",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "request": "^2.88.2"
+  }
+}
