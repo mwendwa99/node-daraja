@@ -23,8 +23,6 @@ app.get('/register', accessToken, (req, res) => {
     let cURL = process.env.CONFIRMATION_URL;
     let vURL = process.env.VALIDATION_URL;
 
-    console.log(auth);
-
     request({
         url: uri,
         method: 'POST',
@@ -32,6 +30,7 @@ app.get('/register', accessToken, (req, res) => {
             "Authorization": auth
         },
         json: {
+            // "ShortCode": "600426",
             "ShortCode": "174379",
             "ResponseType": "Complete",
             "ConfirmationURL": cURL,
